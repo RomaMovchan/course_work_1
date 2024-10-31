@@ -9,10 +9,11 @@ const dbProvider = {
         host: 'localhost',
         database: 'tasks_nest_db',
         password: 'password',
-        port: 5432,
+        port: 5433,
     }),
 }
 @Module({
-    providers: [ dbProvider ]
+    providers: [ dbProvider ],
+    exports: [ dbProvider ]
 })
 export class DbModule {}
