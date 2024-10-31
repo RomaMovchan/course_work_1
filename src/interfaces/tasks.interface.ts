@@ -9,5 +9,5 @@ export interface Task {
 export interface TaskDetails {
     id?: number;
     taskid: number;
-    author: string;
+    assignedperson: string;
 }
